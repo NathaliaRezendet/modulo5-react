@@ -10,26 +10,30 @@ class Drinks extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <div>
                 <h1>Drinks</h1>
                 <ul>
-                {this.state.dados.map((item) => {
-                    return <li key={item.idDrink}></li>
-                })}
+                    {this.state.dados.lenght < 100 ?
+                        'Loading' :
+                        this.state.dados.map((item) => {
+                            return <li key={item.idDrink}>
+                                <img src={item.strDrinkThumb} alt={`Imagem drink ${item.strDrink}`} width="100px" />
+                                {item.strDrink}
+                            </li>
+                        })}
                 </ul>
             </div>
         )
     }
 
+
     componentDidMount() {
         fetch(this.url)
-        .then(response => response.json())
-        .then(json => {
-            return this.setState({ dados: json.drinks })
-        })
+            .then(response => response.json())
+            .then(json => {
+                return this.setState({ dados: json.drinks })
+            })
     }
 }
-
 export default Drinks
