@@ -52,7 +52,8 @@
 }
 
 .meuBotao:hover, .meuBotao:focus, .active {
-    background: #618C03;
+    background: #f9ae48;
+    transition: 0.6s;
     
 }
 

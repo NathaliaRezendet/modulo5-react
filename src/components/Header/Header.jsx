@@ -5,7 +5,15 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <h1 className={style.header}>Header</h1> 
+                <nav>
+                <ul className={style.header}>
+                    <li>Drinks</li>
+                    <li>About us</li>
+                    <li className={style.logo}>Drinks</li>
+                    <li>Our team</li>
+                    <li>Contact</li>
+                </ul> 
+                </nav>
             </header>
         )
     }

@@ -1,5 +1,11 @@
 .content {
-    color: black;
-    text-align: center;
-    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    font-size: small;
+  }
+
+  footer {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 70px;
   }
