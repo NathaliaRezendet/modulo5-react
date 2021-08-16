@@ -1,0 +1,22 @@
+.btn {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    color: #fffdf8;
+    background: #3E5902;
+    width: 250px;
+    padding: 8px 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    border: none;
+}
+
+.btn:hover, .btn:focus, .active {
+    background: #618C03;
+
+}
+
+.btn:disabled {
+    background-color: #b1b1b1;
+}

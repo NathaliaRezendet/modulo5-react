@@ -1,0 +1,18 @@
+.App {
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+}
+
+.App header {
+    background-color: #483E35;
+    grid-area: header;
+}
+
+.main {
+    grid-area: content;
+}
+
+.App footer {
+    background-color: #483E35;
+    grid-area: footer;
+}

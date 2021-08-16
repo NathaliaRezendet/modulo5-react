@@ -1,0 +1,61 @@
+.gridInterno {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    justify-self: center;
+    grid-template-areas: "titulo titulo" "imagem form";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 1fr;
+    gap: 20px;
+}
+
+.titulo {
+    grid-area: titulo;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.col2img {
+    margin-block-start: 0;
+    grid-area: imagem;
+    max-width: 100%;
+    align-self: start;
+    object-fit: cover;
+    max-height: 400px;
+    width: 550px;
+    border-radius: 5px;
+}
+
+.formContent {
+    grid-area: form;
+    align-self: start;
+    display: block;
+    width: 100%;
+}
+
+.meuInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+.meuBotao {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    color: #fffdf8;
+    background: #3E5902;
+    width: 250px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    border: none;
+}
+
+.meuBotao:hover, .meuBotao:focus, .active {
+    background: #618C03;
+    
+}
+
+.meuBotao:disabled {
+    background-color: #b1b1b1;
+}
