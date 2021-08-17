@@ -12,7 +12,7 @@ class Drinks extends Component {
     render() {
         return (
             <div>
-                <h1>Drinks</h1>
+                <h1>Escolha seu drink</h1>
                 <ul>
                     {this.state.dados.lenght < 100 ?
                         'Loading' :
